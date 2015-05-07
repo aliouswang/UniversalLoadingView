@@ -1,0 +1,29 @@
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swiperefresh_layout"
+    android:layout_height="match_parent">
+<RelativeLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        ></ImageView>
+
+    <com.sw.library.widget.library.UniversalLoadingView
+        android:id="@+id/loadingView"
+        app:bGradient="false"
+        app:radius="50dp"
+        app:bg_transparent="false"
+        app:circleColor="@android:color/holo_green_dark"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.sw.library.widget.library.UniversalLoadingView>
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
