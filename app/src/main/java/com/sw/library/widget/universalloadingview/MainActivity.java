@@ -9,7 +9,6 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 
 import com.sw.library.widget.library.UniversalLoadingView;
@@ -50,7 +49,6 @@ public class MainActivity extends ActionBarActivity {
 
         mImageView = (ImageView) findViewById(R.id.imageview);
         mLoadingView = (UniversalLoadingView) findViewById(R.id.loadingView);
-        mLoadingView.setVisibility(View.GONE);
         mLoadingView.setOnReloadListener(new UniversalLoadingView.ReloadListner() {
             @Override
             public void reload() {
